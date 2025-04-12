@@ -15,6 +15,15 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+
+<div class="logo-bar">
+  <div style="display: flex; align-items: center;">
+    <img src="icons/iron-plumbing-logo.png" alt="Iron Plumbing Utah Logo" />
+    <span class="brand-name">Iron Plumbing</span>
+  </div>
+  <div class="brand-slogan">Iron Strength, Fluid Precision</div>
+</div>
+
   <div class="hero">
     <div class="overlay">
       <h1>Iron Plumbing Utah</h1>
@@ -33,6 +42,9 @@
 
   <main>
     <section id="about">
+  <h2 data-aos="fade-up">About Iron Plumbing</h2>
+  <p data-aos="fade-up">Iron Plumbing is built on grit, skill, and a willingness to tackle the jobs that others turn down. Our team of licensed journeymen and apprentices specialize in both rough-in and finish plumbing across residential and small commercial projects. Whether it's a backed-up sewer line or a full repipe, we bring iron strength and fluid precision to every job.</p>
+  <p data-aos="fade-up">Serving Utah County and surrounding areas, we pride ourselves on transparent pricing, punctual service, and doing work we’re proud to sign our name to.</p>
       <h2>Who We Are</h2>
       <p>Iron Plumbing Utah is a co-op of expert plumbers dedicated to precision craftsmanship and strong client relationships. With modern technology and transparent pricing, we offer dependable service from licensed professionals.</p>
     </section>
@@ -40,12 +52,12 @@
     <section id="services" class="highlight-section">
       <h2>Our Services</h2>
       <div class="grid">
-        <div class="card">Residential Plumbing</div>
-        <div class="card">Water Heater Installs</div>
-        <div class="card">Pipe Repairs</div>
-        <div class="card">Remodel Plumbing</div>
-        <div class="card">Drain Cleaning</div>
-        <div class="card">Fixture Replacements</div>
+        <div class="card"><strong>Residential Plumbing</strong><br>Complete installs, repairs, and upgrades for homes of all sizes.</div>
+        <div class="card"><strong>Water Heater Installs</strong><br>Gas and electric systems installed to code with warranty.</div>
+        <div class="card"><strong>Pipe Repairs</strong><br>Fixing leaks, burst pipes, and deteriorated lines quickly.</div>
+        <div class="card"><strong>Remodel Plumbing</strong><br>Rough-in and finish plumbing for additions and renovations.</div>
+        <div class="card"><strong>Drain Cleaning</strong><br>Clearing clogs, roots, and blockages fast and clean.</div>
+        <div class="card"><strong>Fixture Replacements</strong><br>Updating faucets, toilets, and tubs with precision.</div>
       </div>
     </section>
 
@@ -54,7 +66,7 @@
   <h2 data-aos="fade-up">Contact Iron Plumbing</h2>
   <p data-aos="fade-up"><strong>Phone:</strong> <a href="tel:+13853768665">(385) 376-8665</a></p>
   <p data-aos="fade-up"><strong>Service Area:</strong> Utah County and nearby areas</p>
-  <p data-aos="fade-up"><strong>Business Hours:</strong> Opens 8 AM Monday</p>
+  <p data-aos="fade-up"><strong>Business Hours:</strong> Monday–Friday: 8 AM – 5 PM</p>
   <p data-aos="fade-up"><strong>Email:</strong> <a href="mailto:info@ironplumbingutah.com">info@ironplumbingutah.com</a></p>
 </section>
 
@@ -80,7 +92,42 @@
       <p>Serving Eagle Mountain, Utah and surrounding areas.</p>
     </section>
   
+
 <section id="testimonials">
+  <h2 data-aos="fade-up">What Our Customers Say</h2>
+  <div class="carousel-container" data-aos="fade-up">
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <p>"Iron Plumbing handled a sewer backup that other plumbers wouldn't touch. Honest, fast, and got it done right."</p>
+        <strong>— M. Allen</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"They installed our new water heater same-day. No fuss, fair price, and great communication."</p>
+        <strong>— T. Jensen</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"When our remodel contractor bailed, Iron Plumbing came in and roughed the entire basement — on time and clean."</p>
+        <strong>— L. Romero</strong>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 5000);
+</script>
+
   <h2 data-aos="fade-up">What Our Customers Say</h2>
   <div class="testimonial" data-aos="fade-up">
     <p>"Iron Plumbing Utah tackled a complex sewer line replacement in our century-old home. Their expertise and dedication were evident throughout the project."</p>
@@ -96,9 +143,10 @@
 <section id="gallery">
   <h2 data-aos="fade-up">Project Gallery</h2>
   <div class="gallery-grid" data-aos="fade-up">
-    <img src="gallery/project1.jpg" alt="Project 1" />
-    <img src="gallery/project2.jpg" alt="Project 2" />
-    <img src="gallery/project3.jpg" alt="Project 3" />
+    <figure><img src="gallery/project1.jpg" alt="Project 1"/><figcaption>Water Heater Installation</figcaption></figure>
+    <figure><img src="gallery/project2.jpg" alt="Project 2"/><figcaption>Clogged Drain Cleared</figcaption></figure>
+    <figure><img src="gallery/project3.jpg" alt="Project 3"/><figcaption>Full Basement Rough-In</figcaption></figure>
+    
   </div>
   <p style="text-align:center">Upload your project images into the <code>/gallery</code> folder.</p>
 </section>
@@ -106,6 +154,15 @@
 </main>
 
   <footer>
+  <div>
+    <p><strong>Iron Plumbing</strong> — Serving Utah County</p>
+    <p><a href="tel:+13853768665">(385) 376-8665</a> | <a href="mailto:info@ironplumbingutah.com">info@ironplumbingutah.com</a></p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
     <p>&copy; 2025 Iron Plumbing. Serving Utah County. Call (385) 376-8665</p>
   </footer>
 

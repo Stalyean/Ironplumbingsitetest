@@ -196,3 +196,96 @@ footer a {
 footer a {
   text-decoration: none;
 }
+
+.carousel-container {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 1 0 100%;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  position: relative;
+  transform: scale(1);
+}
+
+/* Logo & top header */
+.logo-bar {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.logo-bar img {
+  height: 50px;
+}
+
+.logo-bar .brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 1rem;
+  font-family: 'Anton', sans-serif;
+}
+
+nav {
+  background-color: #0057b7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  padding: 0.75rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #0057b7;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Additional layout polish */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer nav a {
+  margin: 0 0.5rem;
+  color: #ccc;
+}
