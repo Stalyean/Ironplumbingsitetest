@@ -147,3 +147,52 @@ footer {
   border: 2px solid #ddd;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+nav.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0057b7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.cta-button:hover {
+  background-color: #222;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: red;
+}
+
+.testimonial::before {
+  content: "★★★★★";
+  display: block;
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer p,
+footer a {
+  margin: 0.2rem 0;
+  color: #ccc;
+}
+
+footer a {
+  text-decoration: none;
+}
