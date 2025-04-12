@@ -289,3 +289,26 @@ footer nav a {
   margin: 0 0.5rem;
   color: #ccc;
 }
+
+.lightbox-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.lightbox-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-gallery img:hover {
+  transform: scale(1.03);
+}
+
+.lightbox-gallery figcaption {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  color: #333;
+}
