@@ -1,21 +1,17 @@
-# Iron Plumbing Utah — Enhanced Site
+# Iron Plumbing Utah Website
 
-This is a fully upgraded version of the Iron Plumbing Utah website.
+This is the static website for Iron Plumbing, featuring:
+- A professional layout with branding
+- Full plumbing project gallery with humor
+- Contact form and reviews
+- Responsive, modern design
 
-## Upgrades
+## How to Deploy
 
-1. Branded favicon and bold font
-2. Sticky navigation bar
-3. Animated hero section with call-to-action
-4. Styled and validated contact form
-5. Google-style testimonial cards with stars
-6. Lightbox-enabled project gallery
-7. Custom icons for services (horses/tools/plumbing)
-8. Smooth scroll-triggered animations (AOS)
-9. Professional footer with quick links
-
-## Setup
-
-- Upload to GitHub Pages or any static host
-- Add real images to `/gallery` and `/icons`
-- Customize text and icons as needed
+1. Unzip this folder
+2. Upload all contents to your GitHub repo **at the root**
+3. Go to `Settings > Pages`
+   - Select source: `main`
+   - Folder: `/ (root)`
+   - Click Save
+4. Visit your site at: `https://yourusername.github.io/your-repo-name/`
